@@ -23,3 +23,6 @@ class ActionForm(object):
         
     def run(self):
         return self._run(**self.form.data)
+
+    def render_result(self, result):
+        return str(result)
