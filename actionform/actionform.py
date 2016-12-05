@@ -18,7 +18,7 @@ class ActionForm(object):
 
     def validate(self, form):
         if not form.validate():
-            raise ValidationError(form.errors)
+            raise ValueError(form.errors)
         return form 
         
     def run(self):
